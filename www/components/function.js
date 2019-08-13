@@ -1,5 +1,5 @@
 function calcular(){
-  var nome, idade, peso, altura, a, sexo, imc;
+  var nome, idade, peso, altura, a, sexo, tmbh, tmbm;
 
   nome = document.calc.nome.value;
   idade = parseFloat(document.calc.idade.value);
@@ -23,45 +23,56 @@ function calcular(){
     document.calc.visor2.value = nome + ", Esta na Melhor idade!";
   }
 
-  imc = peso / Math.pow(a, 2);
+  tmbh = (66.47 + (13.75 * peso) + ( 5.00 * a) - (6.76 * idade));
+
+  tmbm = (655.1 + (9.56 * peso) + ( 1.85 * a) - (4.68 * idade));
+
 
   if(sexo == "mulher")
   {
-    if(imc <= 18.4)
+    if(tmbm <= 1200)
     {
-      document.calc.visor1.value = "Seu IMC é: " + imc + ", Abaixo do peso!";
+      document.calc.visor1.value = "Seu TMB é: " + tmbm + ", Sedentário!";
     }
-    else if(imc <= 24)
+    else if(tmbm <= 1375)
     {
-      document.calc.visor1.value = "Seu IMC é: " + imc + ", Peso Normal!";
+      document.calc.visor1.value = "Seu TMB é: " + tmbm + ", Levemente Ativo!";
     }
-    else if(imc <= 29)
+    else if(tmbm <= 1550)
     {
-      document.calc.visor1.value = "Seu IMC é: " + imc + ", Acima do Peso!";
+      document.calc.visor1.value = "Seu TMB é: " + tmbm + ", Moderadamente Ativo!";
+    }
+    else if(tmbm <= 1725)
+    {
+      document.calc.visor1.value = "Seu TMB é: " + tmbm + ", Altamente Ativo!";
     }
     else
     {
-      document.calc.visor1.value = "Seu IMC é: " + imc + ", Obesidade!";
+      document.calc.visor1.value = "Seu TMB é: " + tmbm + ", Extremamente Ativo!";
     }
   }
 
   else
   {
-    if(imc <= 19.4)
+    if(tmbh <= 1200)
     {
-      document.calc.visor1.value = "Seu IMC é: " + imc + ", Abaixo do peso!";
+      document.calc.visor1.value = "Seu TMB é: " + tmbh + ", Sedentário!";
     }
-    else if(imc <= 25)
+    else if(tmbh <= 1375)
     {
-      document.calc.visor1.value = "Seu IMC é: " + imc + ", Peso Normal!";
+      document.calc.visor1.value = "Seu TMB é: " + tmbh + ", Levemente Ativo!";
     }
-    else if(imc <= 30)
+    else if(tmbh <= 1550)
     {
-      document.calc.visor1.value = "Seu IMC é: " + imc + ", Acima do peso!";
+      document.calc.visor1.value = "Seu TMB é: " + tmbh + ", Moderadamente Ativo!";
+    }
+   else if(tmbh <= 1725)
+    {
+      document.calc.visor1.value = "Seu TMB é: " + tmbh + ", Altamente Ativo!";
     }
     else
     {
-      document.calc.visor1.value = "Seu IMC é: " + imc + ", Obesidade!";
+      document.calc.visor1.value = "Seu TMB é: " + tmbh + ", Extremamente Ativo!";
     }
   }
 }
