@@ -5,7 +5,7 @@ body{
   padding: 0;
   font-family: sans-serif;
   background: black;
-  background-image: url("http://c2.peakpx.com/wallpaper/867/898/466/the-golden-gate-san-fransisco-wallpaper.jpg");
+  background-image: url("../gym-academy-dumbbells-weight-muscle-wallpaper.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -74,12 +74,16 @@ input[ type="submit"]:hover{
   background: #4caf50;
 }
 
-p{
+a{
   float: left;
   font-size: 20px;
   border-bottom: 2px solid #4caf50;
   margin-bottom: 50px;
-  padding: 13px 0;
+  padding: 0px 0;
 }
 
+.textbox input [type="radio"]{
+  margin-top: 100px;
+  margin-left: 20px;
+}
 
