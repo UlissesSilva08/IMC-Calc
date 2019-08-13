@@ -4,43 +4,52 @@
   <meta charset="utf-8">
   <script src="components/loader.js"></script>
   <script src="lib/onsenui/js/onsenui.min.js"></script>
+  <script src="components/function.js"></script>
 
   <link rel="stylesheet" href="components/loader.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
 </head>
 <body>
     <div class="box">
         <h1>Calculadora IMC</h1>
 
-        <form class="calc" action="" method="post">
+        <form name="calc" action="" method="post">
 
-          <div class="textbox">
-            <i class="fa fa-user" aria-hidden="true"></i>
-            <input type="text" placeholder="Nome" name="" value="">
+          <div class="visor">
+            <input type="text" placeholder="" class="visor" name="visor1" value="" readonly>
+            <input type="text" placeholder="" class="visor" name="visor2" value="" readonly>
           </div>
 
           <div class="textbox">
-            <i class="fa fa-lock" aria-hidden="true"></i>
-            <input type="number" placeholder="Idade" name="" value="">
+            <i class="fa fa-user-o" aria-hidden="true"></i>
+            <input type="text" placeholder="Nome" name="nome" value="">
           </div>
 
           <div class="textbox">
-            <i class="fa fa-lock" aria-hidden="true"></i>
-            <input type="nmber" placeholder="Peso" name="" value="">
+            <i class="fa fa-calendar-o" aria-hidden="true"></i>
+            <input type="number" placeholder="Idade" name="idade" value="">
           </div>
 
           <div class="textbox">
-            <i class="fa fa-lock" aria-hidden="true"></i>
-            <input type="number" placeholder="Altura" name="" value="">
+            <i class="fa fa-info-circle" aria-hidden="true"></i>
+            <input type="nmber" placeholder="Peso" name="peso" value="">
+          </div>
+
+          <div class="textbox">
+            <i class="fa fa-info-circle" aria-hidden="true"></i>
+            <input type="number" placeholder="Altura" name="altura" value="">
           </div>
 
           <div class="radio">
+            <i class="fa fa-venus" aria-hidden="true"></i>
             <input type="radio" name="sexo" value="mulher" checked><a>Mulher</a><br><br>
+            <i class="fa fa-mars" aria-hidden="true"></i>
             <input type="radio" name="sexo" value="homem"><a>Homem</a>
           </div>
-          
-          <input type="button" name="" value="Calcular">
+
+          <input type="button" class="botao1" name="Enviar" value="Calcular" onclick="calcular()">
         </form>
     </div>
 </body>
