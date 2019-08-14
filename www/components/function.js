@@ -31,50 +31,12 @@ function calcular(){
 
   if(sexo == "mulher")
   {
-    if(tmbm <= 1200)
-    {
-      document.calc.visor1.value = "Seu TMB é: " + tmbm + ", Sedentário!";
-    }
-    else if(tmbm <= 1375)
-    {
-      document.calc.visor1.value = "Seu TMB é: " + tmbm + ", Levemente Ativo!";
-    }
-    else if(tmbm <= 1550)
-    {
-      document.calc.visor1.value = "Seu TMB é: " + tmbm + ", Moderadamente Ativo!";
-    }
-    else if(tmbm <= 1725)
-    {
-      document.calc.visor1.value = "Seu TMB é: " + tmbm + ", Altamente Ativo!";
-    }
-    else
-    {
-      document.calc.visor1.value = "Seu TMB é: " + tmbm + ", Extremamente Ativo!";
-    }
+      document.calc.visor1.value = "Seu TMB é: " + tmbm + ", !";
   }
 
   else
   {
-    if(tmbh <= 1200)
-    {
-      document.calc.visor1.value = "Seu TMB é: " + tmbh + ", Sedentário!";
-    }
-    else if(tmbh <= 1375)
-    {
-      document.calc.visor1.value = "Seu TMB é: " + tmbh + ", Levemente Ativo!";
-    }
-    else if(tmbh <= 1550)
-    {
-      document.calc.visor1.value = "Seu TMB é: " + tmbh + ", Moderadamente Ativo!";
-    }
-   else if(tmbh <= 1725)
-    {
-      document.calc.visor1.value = "Seu TMB é: " + tmbh + ", Altamente Ativo!";
-    }
-    else
-    {
-      document.calc.visor1.value = "Seu TMB é: " + tmbh + ", Extremamente Ativo!";
-    }
+      document.calc.visor1.value = "Seu TMB é: " + tmbh + ", !";
   }
 }
 
